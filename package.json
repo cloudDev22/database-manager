@@ -1,0 +1,14 @@
+{
+  "name": "database-manager",
+  "version": "1.0.0",
+  "description": "A package to make database versioning easy in node.js projects.",
+  "author": "Imad Hashmi <imad.hashmi@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "mysql-async-simple": "^1.0.3",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "custom-env": "^2.0.1"
+  }
+}
