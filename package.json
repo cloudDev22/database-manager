@@ -1,14 +1,28 @@
 {
-  "name": "database-manager",
+  "name": "mysql-database-versioning",
   "version": "1.0.0",
   "description": "A package to make database versioning easy in node.js projects.",
   "author": "Imad Hashmi <imad.hashmi@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "mysql": "^2.18.1",
     "mysql-async-simple": "^1.0.3",
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "custom-env": "^2.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashgit/database-manager.git"
+  },
+  "keywords": [
+    "mysql",
+    "database",
+    "manager",
+    "versioning"
+  ],
+  "bugs": {
+    "url": "https://github.com/hashgit/database-manager/issues"
+  },
+  "homepage": "https://github.com/hashgit/database-manager#readme"
 }
