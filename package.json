@@ -1,6 +1,6 @@
 {
   "name": "mysql-database-versioning",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to make database versioning easy in node.js projects.",
   "author": "Imad Hashmi <imad.hashmi@gmail.com>",
   "license": "MIT",
