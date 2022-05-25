@@ -48,10 +48,12 @@ class DatabaseManager {
 
     async execute_script(file) {
         const script = fs.readFileSync(`${this.ScriptFolder}${file}`, 'utf8');
+        var executedDate = new Date().toISOString();
+        var executedDateFormatted = executedDate.substring(0, executedDate.length-1);
         try {
             await this.db.query(this.connection, script);
             await this.db.query(this.connection, `
-                INSERT INTO db_schema(name, executed_time) VALUES ('${file}', '${new Date().toISOString()}');
+                INSERT INTO db_schema(name, executed_time) VALUES ('${file}', '${executedDateFormatted}');
             `);
             this.log.debug(`Executed ${file}`);
             return true;
