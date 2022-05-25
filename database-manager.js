@@ -102,7 +102,7 @@ class DatabaseManager {
                     continue;
                 }
         
-                const result = await this.execute_script(this.connection, scripts[i]);
+                const result = await this.execute_script(scripts[i]);
                 if (!result) {
                     break;
                 }
